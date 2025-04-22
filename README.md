@@ -20,13 +20,13 @@ This project presents a comprehensive network infrastructure for a university ca
 
 ## 🔍 Project Overview
 
-The objective of this project is to design and implement a robust and scalable network for a university campus using Cisco Packet Tracer. This network integrates multiple academic and administrative buildings, allowing for efficient data sharing, resource access, dynamic routing, and deployment of essential services like DNS, DHCP, FTP, and Mail serves.
+The objective of this project is to design and implement a robust and scalable network for a university campus using Cisco Packet Tracer. This network integrates multiple academic and administrative buildings, allowing for efficient data sharing, resource access, dynamic routing, and deployment of essential services like DNS, DHCP, FTP, and Mail serves.
 
 ---
 
 ## 🗺️ Network Topoloy
 
-The campus comprises several buildings, each employing distinct network topologes:
+The campus comprises several buildings, each employing distinct network topologes:
 
 | Building                          | Topology Used | Devices Used                          |
 |-----------------------------------|---------------|----------------------------------------|
@@ -40,22 +40,21 @@ The objective of this project is to design and implement a robust and scalable n
 
 **Devices Utilized:**
 
-- **Switch PT*: Facilitates high-performance interconnections in mesh and hybrid setps.
-- **Hub PT*: Enables shared medium communication in star and bus layots.
-- **Routers*: Provide inter-building connectivity and routng.
-- **Servers*: Deployed for DHCP, DNS, Mail, and FTP functionalites.
-- **PCs*: Serve as end-user devies.
-- **Cables*: Straight-through for PC-to-switch/hub; cross cables for switch-to-switch/router connectins.
+- **Switch PT*: Facilitates high-performance interconnections in mesh and hybrid setps.
+- **Hub PT*: Enables shared medium communication in star and bus layots.
+- **Routers*: Provide inter-building connectivity and routng.
+- **Servers*: Deployed for DHCP, DNS, Mail, and FTP functionalites.
+- **PCs*: Serve as end-user devies.
+- **Cables*: Straight-through for PC-to-switch/hub; cross cables for switch-to-switch/router connectins.
 
 ---
 
 ## 🧮 IP Addressing Schme
 
-The network utilizes Fixed-Length Subnet Masking (FLSM), starting with the base network `172.11.0.0/16`. Each LAN is assigned a `/28` subnet to accommodate end devices and servers, while `/30` subnets are used for router interconnectons.
+The network utilizes Fixed-Length Subnet Masking (FLSM), starting with the base network `172.11.0.0/16`. Each LAN is assigned a `/28` subnet to accommodate end devices and servers, while `/30` subnets are used for router interconnectons.
 
 **Sample Subnet Allocation:**
 
-```
 | Subnet No. | Network Address | Usable IP Range           | Broadcast Address |
 |------------|-----------------|---------------------------|-------------------|
 | 1          | 172.11.0.0      | 172.11.0.1 – 172.11.0.14  | 172.11.0.15       |
@@ -74,7 +73,6 @@ The network utilizes Fixed-Length Subnet Masking (FLSM), starting with the base 
 | 14         | 172.11.0.208    | 172.11.0.209 – 172.11.0.222| 172.11.0.223     |
 | 15         | 172.11.0.224    | 172.11.0.225 – 172.11.0.238| 172.11.0.239     |
 | 16         | 172.11.0.240    | 172.11.0.241 – 172.11.0.254| 172.11.0.255     |
-```
 
 Router-to-router links utilize `/30` subnets from `172.11.1.0/30` upwrds.
 
