@@ -55,20 +55,34 @@ The network utilizes Fixed-Length Subnet Masking (FLSM), starting with the base 
 
 **Sample Subnet Allocation:**
 
+```
 | Subnet No. | Network Address | Usable IP Range           | Broadcast Address |
 |------------|-----------------|---------------------------|-------------------|
 | 1          | 172.11.0.0      | 172.11.0.1 – 172.11.0.14  | 172.11.0.15       |
 | 2          | 172.11.0.16     | 172.11.0.17 – 172.11.0.30 | 172.11.0.31       |
 | 3          | 172.11.0.32     | 172.11.0.33 – 172.11.0.46 | 172.11.0.47       |
-| ...        | ...             | ...                       | ...              |
+| 4          | 172.11.0.48     | 172.11.0.49 – 172.11.0.62 | 172.11.0.63       |
+| 5          | 172.11.0.64     | 172.11.0.65 – 172.11.0.78 | 172.11.0.79       |
+| 6          | 172.11.0.80     | 172.11.0.81 – 172.11.0.94 | 172.11.0.95       |
+| 7          | 172.11.0.96     | 172.11.0.97 – 172.11.0.110| 172.11.0.111      |
+| 8          | 172.11.0.112    | 172.11.0.113 – 172.11.0.126| 172.11.0.127     |
+| 9          | 172.11.0.128    | 172.11.0.129 – 172.11.0.142| 172.11.0.143     |
+| 10         | 172.11.0.144    | 172.11.0.145 – 172.11.0.158| 172.11.0.159     |
+| 11         | 172.11.0.160    | 172.11.0.161 – 172.11.0.174| 172.11.0.175     |
+| 12         | 172.11.0.176    | 172.11.0.177 – 172.11.0.190| 172.11.0.191     |
+| 13         | 172.11.0.192    | 172.11.0.193 – 172.11.0.206| 172.11.0.207     |
+| 14         | 172.11.0.208    | 172.11.0.209 – 172.11.0.222| 172.11.0.223     |
+| 15         | 172.11.0.224    | 172.11.0.225 – 172.11.0.238| 172.11.0.239     |
+| 16         | 172.11.0.240    | 172.11.0.241 – 172.11.0.254| 172.11.0.255     |
+```
 
-Router-to-router links utilize `/30` subnets from `172.11.1.0/30` upwrds.
+Router-to-router links utilize `/30` subnets from `172.11.1.0/30` upwrds.
 
 ---
 
 ## 🔁 Routing Configuraion
 
-Dynamic routing is implemented using RIP version 2 to facilitate efficient route propagation across the nework.
+Dynamic routing is implemented using RIP version 2 to facilitate efficient route propagation across the nework.
 
 **Configuration Steps:**
 
@@ -109,17 +123,17 @@ Each building hosts specific network services to cater to the campus's diversene
 
 ## ✅ Testing & Validtion
 
-To ensure network reliability and functionality, the following tests were conucted:
+To ensure network reliability and functionality, the following tests were conucted:
 
-- **Inter-Building Connectivty:** Utilized the `ping` command to test communication between PCs across different buidings.
+- **Inter-Building Connectivty:** Utilized the `ping` command to test communication between PCs across different buidings.
 
   ```
   ping <target IP>
   ```
 
-- **Service Accessibilty:** Verified access to FTP, Mail, and DNS services from various nodes within the ntwork.
+- **Service Accessibilty:** Verified access to FTP, Mail, and DNS services from various nodes within the ntwork.
 
-- **DHCP Functionalty:** Confirmed automatic IP address assignment to client devices within the Libray LAN.
+- **DHCP Functionalty:** Confirmed automatic IP address assignment to client devices within the Libray LAN.
 
 ---
 
