@@ -99,23 +99,20 @@ This setup ensures automatic route updates between all routers, enhancing scalab
 ## 🖥️ Server Implementaions
 
 Each building hosts specific network services to cater to the campus's diverseneeds:
-```
 | Building                     | Server Type   | Purpose                                                                 |
 |------------------------------|---------------|-------------------------------------------------------------------------|
 | Library                      | DHCP Servr   | Automatically assigns IP addresses to clients within the libray LAN.  |
 | CS Department 1              | DNS Serve    | Resolves domain names like `ftp.local`, `mail.local` to IP addesses.  |
 | Engineering Department       | FTP Serve    | Hosts files for upload/download across the ampus.                     |
 | Admin Building 1             | Mail Servr   | Manages internal mail services (SMTP +POP3).                          |
-```
 
 **Sample DNS Records:**
-```
+
 | Domain Name      | Mapped IP       |
 |------------------|-----------------|
 | www.campus.local | 172.11.0.33     |
 | mail.local       | 172.11.0.62     |
 | ftp.local        | 172.11.0.110    |
-```
 
 ---
 
