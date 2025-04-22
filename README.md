@@ -97,22 +97,23 @@ Each building hosts specific network services to cater to the campus's diversene
 ```
 
 **Sample DNS Records:**
-
+```
 | Domain Name      | Mapped IP       |
 |------------------|-----------------|
 | www.campus.local | 172.11.0.33     |
 | mail.local       | 172.11.0.62     |
 | ftp.local        | 172.11.0.110    |
+```
 
 ---
 
 ## ✅ Testing & Validtion
 
-To ensure network reliability and functionality, the following tests were conucted:
+To ensure network reliability and functionality, the following tests were conucted:
 
 - **Inter-Building Connectivty:** Utilized the `ping` command to test communication between PCs across different buidings.
 
-  ```bash
+  ```
   ping <target IP>
   ```
 
@@ -135,4 +136,4 @@ To explore or modify the network setup:
 2. **Open the Project:*
 
    - Launch Cisco PacketTracer
-   - Open the `.pkt` file located in the cloned repository. 
+   - Open the `.pkt` file located in the cloned repository. 
