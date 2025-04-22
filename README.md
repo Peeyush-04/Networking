@@ -1,5 +1,5 @@
 # 🏫 University Campus Network Design – Cisco Packet Tracer
-This project presents a comprehensive network infrastructure for a university campus, meticulously designed and simulated using Cisco Packet Tracer. It encompasses multiple departments and facilities, ensuring seamless communication, resource sharing, and centralized services
+This project presents a comprehensive network infrastructure for a university campus, meticulously designed and simulated using Cisco Packet Tracer. It encompasses multiple departments and facilities, ensuring seamless communication, resource sharing, and centralized services
 
 ---
 
@@ -18,9 +18,9 @@
 
 ---
 
-## 🔍 Project Overvie
+## 🔍 Project Overview
 
-The objective of this project is to design and implement a robust and scalable network for a university campus using Cisco Packet Tracer. This network integrates multiple academic and administrative buildings, allowing for efficient data sharing, resource access, dynamic routing, and deployment of essential services like DNS, DHCP, FTP, and Mail serves.
+The objective of this project is to design and implement a robust and scalable network for a university campus using Cisco Packet Tracer. This network integrates multiple academic and administrative buildings, allowing for efficient data sharing, resource access, dynamic routing, and deployment of essential services like DNS, DHCP, FTP, and Mail serves.
 
 ---
 
@@ -51,7 +51,7 @@
 
 ## 🧮 IP Addressing Schme
 
-The network utilizes Fixed-Length Subnet Masking (FLSM), starting with the base network `172.11.0.0/16`. Each LAN is assigned a `/28` subnet to accommodate end devices and servers, while `/30` subnets are used for router interconnectons.
+The network utilizes Fixed-Length Subnet Masking (FLSM), starting with the base network `172.11.0.0/16`. Each LAN is assigned a `/28` subnet to accommodate end devices and servers, while `/30` subnets are used for router interconnectons.
 
 **Sample Subnet Allocation:**
 
@@ -68,7 +68,7 @@
 
 ## 🔁 Routing Configuraion
 
-Dynamic routing is implemented using RIP version 2 to facilitate efficient route propagation across the nework.
+Dynamic routing is implemented using RIP version 2 to facilitate efficient route propagation across the nework.
 
 **Configuration Steps:**
 
