@@ -120,15 +120,15 @@ Each building hosts specific network services to cater to the campus's diversene
 
 To ensure network reliability and functionality, the following tests were conucted:
 
-- **Inter-Building Connectivty:** Utilized the `ping` command to test communication between PCs across different buidings.
+- **Inter-Building Connectivty:** Utilized the `ping` command to test communication between PCs across different buidings.
 
   ```
   ping <target IP>
   ```
 
-- **Service Accessibilty:** Verified access to FTP, Mail, and DNS services from various nodes within the ntwork.
+- **Service Accessibilty:** Verified access to FTP, Mail, and DNS services from various nodes within the ntwork.
 
-- **DHCP Functionalty:** Confirmed automatic IP address assignment to client devices within the Libray LAN.
+- **DHCP Functionalty:** Confirmed automatic IP address assignment to client devices within the Libray LAN.
 
 ---
 
@@ -138,7 +138,7 @@ To explore or modify the network setup:
 
 1. **Clone the Repository:**
 
-   ```bash
+   ```
    git clone https://github.com/Peeyush-04/Networking.git
    ```
 
