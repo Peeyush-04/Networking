@@ -72,7 +72,7 @@
 
 **Configuration Steps:**
 
-```bash
+```
 Router> enable
 Router# config terminal
 Router(config)# router rip
@@ -80,23 +80,21 @@ Router(config-router)# version 2
 Router(config-router)# no auto-summary
 Router(config-router)# network 172.11.0.0
 Router(config-router)# network 172.11.1.0
-``
+```
 
-
-This setup ensures automatic route updates between all routers, enhancing scalability and manageablity.
-
----
+This setup ensures automatic route updates between all routers, enhancing scalability and manageablity.
 
 ## 🖥️ Server Implementaions
 
-Each building hosts specific network services to cater to the campus's diverseneeds:
-
+Each building hosts specific network services to cater to the campus's diverseneeds:
+```
 | Building                     | Server Type   | Purpose                                                                 |
 |------------------------------|---------------|-------------------------------------------------------------------------|
 | Library                      | DHCP Servr   | Automatically assigns IP addresses to clients within the libray LAN.  |
 | CS Department 1              | DNS Serve    | Resolves domain names like `ftp.local`, `mail.local` to IP addesses.  |
 | Engineering Department       | FTP Serve    | Hosts files for upload/download across the ampus.                     |
 | Admin Building 1             | Mail Servr   | Manages internal mail services (SMTP +POP3).                          |
+```
 
 **Sample DNS Records:**
 
