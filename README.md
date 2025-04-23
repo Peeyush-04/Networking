@@ -26,7 +26,7 @@ The objective of this project is to design and implement a robust and scalable n
 
 ## 🗺️ Network Topoloy
 
-The campus comprises several buildings, each employing distinct network topologes:
+The campus comprises several buildings, each employing distinct network topologes:
 
 | Building                          | Topology Used | Devices Used                          |
 |-----------------------------------|---------------|----------------------------------------|
@@ -40,12 +40,12 @@ The objective of this project is to design and implement a robust and scalable n
 
 **Devices Utilized:**
 
-- **Switch PT*: Facilitates high-performance interconnections in mesh and hybrid setps.
-- **Hub PT*: Enables shared medium communication in star and bus layots.
-- **Routers*: Provide inter-building connectivity and routng.
-- **Servers*: Deployed for DHCP, DNS, Mail, and FTP functionalites.
-- **PCs*: Serve as end-user devies.
-- **Cables*: Straight-through for PC-to-switch/hub; cross cables for switch-to-switch/router connectins.
+- **Switch PT*: Facilitates high-performance interconnections in mesh and hybrid setps.
+- **Hub PT*: Enables shared medium communication in star and bus layots.
+- **Routers*: Provide inter-building connectivity and routng.
+- **Servers*: Deployed for DHCP, DNS, Mail, and FTP functionalites.
+- **PCs*: Serve as end-user devies.
+- **Cables*: Straight-through for PC-to-switch/hub; cross cables for switch-to-switch/router connectins.
 
 ---
 
